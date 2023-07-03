@@ -1,0 +1,46 @@
+1. have input like list of comapny =[]
+date_range=[]
+dict_values = []
+2.read companyname\tsubid\t\cost.txtfile - op=[(sub_id,cost)]
+
+
+def find_values(text_file):
+ls = []
+with open ("filename") as file:
+  for data in file:  #read line by line
+    res = data.split()  # ['comapnynae','sub','cost'] extra line will be there [] for that
+    if res:
+      val = (res[1],res[2)
+      ls.append(val)
+  return ls   #[(subid,cost),(subid,cost),(subid,cost)]
+
+
+def retrun_values(comapny,date_range,dict_values):
+  final_list =[] 
+  for data in zip(comapny,date_range):
+    val1 = data[0]
+    val2 = data[1]
+    res = val2.split("-")
+    text_file = "%s%s%s.txt",(val1,res[1],res[0])
+    final_values = find_values(text_file)
+    for (sub,cost) in final_value:
+      key = (val1,sub) ##important KEY = (SUB,VAL1)
+      data = dict_values.get(key)    ###  THE PROBLEM WE FACE IS MUTILE OUTPUT OR SAME COMAPNY NAME ,6 TO 9 TIMES SAME AND ALSO WE GET NONE TO SLOVE THAT
+      if dict_val is not NONE:
+        temp_list = [val1,sub,data[0],cost,data1[1],data[2]]
+         final_list.append(temp_list)
+
+     
+      
+   
+    
+
+
+
+if' __main__'==__name__:
+   comapny =[c1,c2,c3]
+   date_range=[2023-07-03,2023-07-02,]
+   dict_values ={(c1,sub1):[date,43,90],(c2,sub2):[date,mongo,cloudoptionalcost],():[]}
+   retrun_values(comapny,date_range,dict_values)
+
+    
