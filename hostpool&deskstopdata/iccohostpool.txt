@@ -1,0 +1,11 @@
+in this code we have to read the ecxel file.
+while reading the excel file u have to format the data in yyyy-mm-dd otherwiseit will get the error
+MySQLdb.OperationalError: (1292, "Incorrect datetime value: '01-05-2023' for column 'date' at row 1")
+datetime format should always be in  shown above .
+when working  with the excel format the data the way u want escially the data.
+
+
+-> datetime will be string format .'%s'
+->  after the execution conn, cur close and  also the conn should committ for the DML statement.
+-> DUMP -> dumping the data collecting data and storing it in the form of file. insted of giing the creditional to the customer will give the dump data .
+-> mysql =>server => data export =>"select all the objects to export" => select the option  export to self contained file =>five filename =>export it 
