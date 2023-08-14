@@ -1,5 +1,5 @@
 import pandas as pd
-import MySQLdb
+import MySQLdb    #pip install mysqlclient
 
 def get_connection(data):
     khost, kuser , kpasswd , kdb = data.split('#')
